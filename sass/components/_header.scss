@@ -1,5 +1,7 @@
+.header{
+    
+}
 .header-container {
-    display: flex;
     align-items: center;}
 
 .logo {
@@ -8,7 +10,8 @@
     font-size: 26px;
     line-height: 1.2;
     color: var(--accent-color);
-    margin-right: 93px;
+    
+    
 }
 .logo__black-text {
     color: var(--title-text-color);
@@ -21,7 +24,7 @@
         }
 }
 .nav__list {
-    display: flex;
+    display: none;
     .nav__item:not(:last-child) {
             margin-right: 50px;
         }
@@ -58,8 +61,8 @@
 
 
 .contacts__link {
-    display: flex;
-    align-items: center;
+    display: none;
+    
 
     font-weight: 500;
     font-size: 14px;

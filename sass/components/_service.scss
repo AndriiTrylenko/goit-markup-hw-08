@@ -1,9 +1,21 @@
 .service {
-    display: flex;
-    gap: 30px;
+    display: none;
+    @media screen and (min-width:1200px) {
+            display: flex;
+            gap: 30px;
+    
+        }
+
+   
 }
 .what-wedo {
-    padding-bottom: 94px;
+    display: none;
+    @media screen and (min-width:1200px) {
+            display: flex;
+            padding-bottom: 94px;
+    
+        }
+
 }
 .service__description {
     position: absolute;

@@ -1,10 +1,30 @@
 .patron {
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
-    gap: 30px;
     &:focus {
             border: var(--accent-color);
-        }
+    }
+    @media screen and ( min-width:768px ) {
+        margin: -15px;
+    }
+}
+.patron__item{
+    @media screen and ( min-width:480px )  {
+    width: calc(( 100% - 4 * 15px ) / 2) ;
+    margin: 15px;        
+    }
+
+    @media screen and ( min-width:768px ) {
+        width: calc(( 100% - 6 * 15px ) / 3) ;
+        margin: 15px;
+    }
+
+    @media screen and ( min-width:1200px){
+    width: calc(( 100% - 12 * 15px ) / 6);
+    margin: 15px;    
+    }
+
 }
 .patron__link {
     display: flex;
@@ -13,7 +33,6 @@
     border-radius: 4px;
     border: 2px solid #AFB1B8;
     color: #AFB1B8;
-    width: 170px;
     height: 92px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);

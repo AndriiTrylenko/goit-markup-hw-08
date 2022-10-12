@@ -43,6 +43,11 @@
                 +38 096 111 11 11</a>
           </li>
         </ul>
+      <button type="button" class="menu-button js-is-open">
+        <svg>
+          <use href="./images/icon-mobile/icon-mobile.svg#menu "></use>
+        </svg>
+      </button>
       </div>
     </header>
     <!--Інформація сторінки-->
@@ -319,7 +324,7 @@
     <!--Підвал-->
     <footer class="footer">
       <div class="container footer__container">
-        <div>
+        <div class="footer__tablet">
           <a class="logo footer__logo" href="./index.html">Web<span class="logo__wight-text">Studio</span></a>
           <address>
           <ul class="list">
@@ -343,8 +348,8 @@
       </div>
       <div class="icon-social-footer">
         <p class="join-us">Приєднуйтесь</p>
-        <ul class="join-us__footer">
-          <li class="join-us__item"><a class="join-us__link" 
+        <ul class="join-us__footer list">
+          <li class="join-us__item "><a class="join-us__link" 
                 href="https://www.instagram.com/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -384,7 +389,7 @@
         </ul>
       </div>
       <!--Розділ підписатися-->
-      <form action="./portfolio.html" class="sign-up--form" autocomplete="off">
+      <form action="./portfolio.html" class="sign-up sign-up--form" autocomplete="off">
         <p class="sign-up__title">підпишіться на розсилку</p>
         <div class="sign-up-field">
           <input 
@@ -404,7 +409,7 @@
     </div>  
 
     </footer>
-        <!--Модaльне вікно-->>
+        <!--Модaльне вікно-->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal__close-button" data-modal-close>

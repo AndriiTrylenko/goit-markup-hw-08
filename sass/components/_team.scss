@@ -1,22 +1,42 @@
 .team-position {
+   
     text-align: center;
     background-color: #f5f4fa;
 }
 .team {
-    display: flex;
-    .team__photo {
-    margin-left: 30px;
-    
-    width: 270px;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-                0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-    background-color: #ffffff;
-        }
-&:first-child {
-    margin-left: 0;
+    @media screen and (min-width:768px){
+        display: flex;
+        flex-wrap: wrap;
     }
+         @media screen and (min-width: 1200px) {
+             margin: -15px;
+         }
+    
 }
+  .team__photo {
+
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+          0px 2px 1px rgba(0, 0, 0, 0.2);
+      border-radius: 0px 0px 4px 4px;
+      background-color: #ffffff;
+
+      &:not(:last-child) {
+          margin-bottom: 30px;
+      }
+      @media screen and (min-width:768px) {
+        width: calc(( 100% - 4 * 15px) / 2);
+        margin: 15px;
+        &:not(:last-child){
+            margin-bottom: 15px;
+        }
+      }
+      @media screen and ( min-width:1199px) {
+        width: calc(( 100% - 8 * 15px) / 4);
+        margin: 15px;
+        
+      }
+
+    }
 .team__name {
     margin-bottom: 10px;
 
