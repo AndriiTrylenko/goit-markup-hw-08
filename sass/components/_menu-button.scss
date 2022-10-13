@@ -6,20 +6,31 @@
     width: 40px;
     height: 40px;
     cursor: pointer;
+    @media screen and (min-width: 768px) {
+            display: none;
+        }
 }
 .menu-toggle{
     position: absolute;
     top: 20px;
     right: 20px;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
 }
 
 .menu-container{
     position: fixed;
     top:0;
-    left: 0;
+    padding-left: 40px;
     width: 100%;
     height: 100%;
     background-color: white;
+    display: flex;
+    flex-direction: column;
 
     transform: translateX(100%);
     transition: transform 400ms ;
@@ -29,6 +40,95 @@
 
 }
 
+
+.mobile-list{
+    margin-top: 48px;
+    margin-bottom: auto;
+}
+.mobile-list-item{
+    margin-bottom: 32px;
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+.mobile-list-link{
+    max-width: 219px;
+        max-height: 48px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 1.17;
+        letter-spacing: 0.02em;
+        color: var(--title-text-color);
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+        &:hover,
+        :focus,
+        :active {
+            cursor: pointer;
+            color: var(--accent-color);
+        }
+}
+
+.mobile-contacts-item:first-child {
+    margin-bottom: 32px;
+
+}
+
+.mobile-contacts-item:last-child {
+    margin-bottom: 64px;
+}
+.mobile-contacts-phone{
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+        &:hover,
+        &:focus,
+        &:active {
+            color: #0e7cd6;
+        }
+}
+
+.mobile-contacts-email{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17px;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+}
+
+
 .mobile-socials{
     display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 43px;
+    
+}
+.mobile-socials-item:not(:last-child):after {
+    content: "";
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    transform: rotate(90deg);
+    margin-right: 10px;
+    margin-left: 10px;
+
+}
+.mobile-social-link{
+    font-weight: 500;
+        font-size: 18px;
+        line-height: 1.2px;
+        letter-spacing: 0.02em;
+        color: var(--accent-color);
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+        &:hover,
+        &:focus,
+        &:active {
+            color: #0e7cd6;
+        }
 }
