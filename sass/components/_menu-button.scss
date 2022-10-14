@@ -24,10 +24,11 @@
 
 .menu-container{
     position: fixed;
-    top:0;
-    padding-left: 40px;
-    width: 100%;
-    height: 100%;
+    padding: 48px 83px 48px 40px;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -92,6 +93,9 @@
         &:active {
             color: #0e7cd6;
         }
+    @media screen and (max-width: 480px) {
+        font-size: 20px;
+    }
 }
 
 .mobile-contacts-email{
@@ -100,6 +104,9 @@
     line-height: 1.17px;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
+    @media screen and (max-width: 480px) {
+        font-size: 18px;
+    }
 }
 
 
@@ -107,7 +114,9 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding-bottom: 43px;
+    @media screen and (max-width: 480px) {
+            flex-wrap: wrap;
+        }
     
 }
 .mobile-socials-item:not(:last-child):after {
