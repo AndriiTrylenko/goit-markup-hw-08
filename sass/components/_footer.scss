@@ -2,10 +2,7 @@
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: var(--secondary-bgd-color);
-    &__logo{
-        display: block;
-            margin-bottom: 20px;
-    }
+    
 }
 
 .footer__container {
@@ -24,6 +21,18 @@
         flex-wrap: nowrap;
         justify-content: flex-start;
   }
+}
+
+.logo__footer{
+    display: block;
+    margin-bottom: 20px;
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    color: var(--accent-color);
+    
 }
 .logo__wight-text {
     color: var(--secondary-text-color);
