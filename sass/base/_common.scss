@@ -6,6 +6,10 @@ body {
     letter-spacing: 0.03em;
     background-color: var(--main-background-color);
     color: var(--primary-text-color);
+    
+}
+body.modal-open {
+    overflow: hidden;
 }
 .link {
     text-decoration: none;

@@ -6,6 +6,15 @@
     margin-bottom: 50px;
     justify-content: center;
     display: flex;
+     gap: 8px;
+    row-gap: 15px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    @media screen and ( min-width:768px) {
+        display: flex;
+        justify-content: center;
+        
+    }
 }
 .portfolio__nav__item {
     margin-right: 8px;
@@ -43,9 +52,9 @@
 
 }
 .portfolio__work{
-    gap: 30px;
-    display: flex;
-    flex-wrap: wrap;
+    //gap: 30px;
+    //display: flex;
+    //flex-wrap: wrap;
 }
 .portfolio__work_item {
     cursor: pointer;
