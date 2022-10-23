@@ -885,12 +885,6 @@ img {
   }
 }
 
-.patron__item {
-  /* @media screen and (min-width:320px) {
-           width: calc((100% - 4 * 15px) / 2);
-           margin: 15px;
-       }*/
-}
 @media screen and (max-width: 479px) {
   .patron__item {
     width: calc((100% - 60px) / 2);
@@ -1306,19 +1300,48 @@ img {
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio__work_item {
-  cursor: pointer;
+.portfolio__work {
+  margin: -15px;
+}
+@media screen and (min-width: 768px) {
+  .portfolio__work {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.portfolio__work__item {
+  margin-bottom: 30px;
   -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
-.portfolio__work_item:nth-child(3n) {
-  margin-right: 0px;
+.portfolio__work__item:last-child {
+  margin-bottom: 0px;
 }
-.portfolio__work_item:hover, .portfolio__work_item:focus {
+.portfolio__work__item:hover, .portfolio__work__item:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+@media screen and (min-width: 768px) {
+  .portfolio__work__item {
+    width: calc((100% - 60px) / 2);
+    margin: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio__work__item {
+    width: calc((100% - 90px) / 3);
+    margin: 15px;
+  }
+  .portfolio__work__item:nth-child(n+7) {
+    margin-bottom: 0px;
+  }
 }
 
 .portfolio__work__description {
@@ -1335,6 +1358,11 @@ img {
   letter-spacing: 0.06em;
   color: var(--title-text-color);
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio__work__title {
+    letter-spacing: 0.04em;
+  }
+}
 
 .portfolio__work__text {
   margin-top: 4px;
@@ -1345,7 +1373,6 @@ img {
 }
 
 .portfolio__link {
-  display: block;
   text-decoration: none;
 }
 .portfolio__link:hover, .portfolio__link:focus {
@@ -1371,7 +1398,7 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  width: 370px;
+  width: 100%;
   height: 100%;
   background: rgba(33, 150, 243, 0.9);
   font-size: 18px;
